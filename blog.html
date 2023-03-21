@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Blog Hero</title>
+    <!-- daisyUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-green-700 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-zinc-800">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Read blogs and learn new things!
+                </p>
+            </div>
+            <button id="quiz-btn" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Quiz
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <!-- Landing page content start -->
+    <section class="w-[90%] sm:w-9/12 mx-auto text-center">
+        <h1 class="text-center my-8 text-xl">Welcome to Blogs</h1>
+        <div class="w-full mx-auto text-left">
+            <div class="grid grid-cols-1 gap-5">
+                <!-- question 1 -->
+                <div class="card md:card-side bg-base-100 shadow-xl rounded-lg">
+                    <div class="w-full md:w-[40%]"><img class="w-full h-[250px] md:h-full rounded-lg"
+                            src="blog-images/array-method.png" alt="array-methods" />
+                    </div>
+                    <div class="card-body p-2 w-full md:w-[60%]">
+                        <div tabindex="0"
+                            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                            <div class="collapse-title text-xl md:text-2xl font-semibold">
+                                What is the difference between map(), forEach(), filter(), find() ?
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    <span class="font-semibold text-xl">map() : </span>
+                                    map() method loops through each element in array and calls the provided function for
+                                    each element.map() method returns a new array
+                                </p>
+                                <p>
+                                    <span class="font-semibold text-xl">forEach() : </span>
+                                    forEach() method loops through each element in array and calls the provided function
+                                    for
+                                    each element.forEach() method returns undefined
+                                </p>
+                                <p>
+                                    <span class="font-semibold text-xl">filter() : </span>
+                                    We can filter any element of the array according to the condition through javascript
+                                    filter() method
+                                </p>
+                                <p>
+                                    <span class="font-semibold text-xl">find() : </span>
+                                    We can filter any element of the array according to the condition through javascript
+                                    find() method.But it's returns just first filtered element.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- question 2 -->
+                <div class="card md:card-side bg-base-100 shadow-xl rounded-lg">
+                    <div class="w-full md:w-[40%]"><img class="w-full h-[250px] md:h-full rounded-lg"
+                            src="blog-images/local-storage.png" alt="local-storage" />
+                    </div>
+                    <div class="card-body px-2 w-full md:w-[60%]">
+                        <div tabindex="0"
+                            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                            <div class="collapse-title text-xl md:text-2xl font-semibold">
+                                Local Storage vs Session Storage vs Cookies
+                            </div>
+                            <div class="collapse-content">
+                                <p>
+                                    <span class="font-semibold text-xl">Local Storage : </span>
+                                    Local storage storing data without any expiration date.It's data is not deleted when
+                                    browser is closed.It's data is available for future session.
+                                </p>
+                                <p>
+                                    <span class="font-semibold text-xl">Session Storage : </span>
+                                    Local storage storing data for a session.It's data is deleted when browser is
+                                    closed.It's data is not available for future session.
+                                </p>
+                                <p>
+                                    <span class="font-semibold text-xl">Cookies : </span>
+                                    Cookies are small text files kept on a web server that identify the person using a
+                                    web page.Cookies Has different expiration dates (both the server or client can set
+                                    up expiration date).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- question 3 -->
+                <div class="card md:card-side bg-base-100 shadow-xl rounded-lg">
+                    <div class="w-full md:w-[40%]"><img class="w-full h-[250px] md:h-full rounded-lg"
+                            src="blog-images/event-loop.png" alt="event-loop" />
+                    </div>
+                    <div class="card-body px-2 w-full md:w-[60%]">
+                        <div tabindex="0"
+                            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                            <div class="collapse-title text-xl md:text-2xl font-semibold">
+                                What is an event loop and how it is works?
+                            </div>
+                            <div class="collapse-content">
+                                <p>The Event Loop has one simple job to monitor the Call Stack and the Callback Queue.
+                                    If the Call Stack is empty, the Event Loop will take the first event from the queue
+                                    and will push it to the Call Stack, which effectively runs it. Such an iteration is
+                                    called a tick in the Event Loop.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- question 4 -->
+                <div class="card md:card-side bg-base-100 shadow-xl rounded-lg">
+                    <div class="w-full md:w-[40%]"><img
+                            class="w-full h-[250px] md:h-full border border-black rounded-lg"
+                            src="blog-images/func-1.png" alt="function" />
+                    </div>
+                    <div class="card-body px-2 w-full md:w-[60%]">
+                        <div tabindex="0"
+                            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                            <div class="collapse-title text-xl md:text-2xl font-semibold">
+                                Describe about quizTimer() function in noChange.js file.
+                            </div>
+                            <div class="collapse-content">
+                                <p>The time count will continue after 1 second through setInterval in the quizTimer()
+                                    function.The counted minutes and seconds will be added to the html via innerHtml.The
+                                    true value through the dismiss parameter in the function will actually call the
+                                    clearInterval() method. Then the time count will stop.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- question 5 -->
+                <div class="card md:card-side bg-base-100 shadow-xl rounded-lg">
+                    <div class="w-full md:w-[40%]"><img class="w-full h-[250px] md:h-full rounded-lg"
+                            src="blog-images/func-2.png" alt="function 2" />
+                    </div>
+                    <div class="card-body px-2 w-full md:w-[60%]">
+                        <div tabindex="0"
+                            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                            <div class="collapse-title text-xl md:text-2xl font-semibold">
+                                Describe about chooseQuiz() function in noChange.js file.
+                            </div>
+                            <div class="collapse-content">
+                                <p>The chooseQuiz() function has two parameters. The values of the two parameters are
+                                    coming dynamically from the displayOptions() function. The value of the answer
+                                    variable is obtained through some condition in the quizTimer() function. That value
+                                    is passed as a parameter to the displayAnswers() function.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+    <script>
+        document.getElementById("quiz-btn").addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+</body>
+
+</html>
